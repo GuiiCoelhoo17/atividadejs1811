@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <h1>Leia o pedido de um cliente de fast food, baseado no menu a seguir, e depois imprima 
+        o preço e a opção que ele escolher.</h1>
+    
+    <h5>Opção 1 - Promoção Big Super Sanduba - Especificação = 2 Hambúrgueres, Queijo, Batata Frita e Refrigerante - Valor R$ 5,00</h5>
+    <h5>Opção 2 - Promoção Quase Super Sanduba - Especificação = 1 Hambúrguer, Batata Frita e Refrigerante - Valor R$ 3,00</h5>
+    <h5>Opção 3 - Promoção Mirrados Sanduba - Especificação = 1 Misto Quente e Refrigerante - Valor R$ 1,50</h5>
+
+    <div id="lanchonete"></div>
+
+    <script>
+        const Valor1 = 5.00;
+        const Valor2 = 3.00;
+        const Valor3 = 1.50;
+
+        let cliente = prompt("Qual o seu nome ?");
+        let opcao = prompt("Qual das opções você deseja ?");
+        let resul;
+
+        if(opcao == 1){
+            resul = "cliente: " + cliente + "</br>Seu valor a pagar é de: R$" + Valor1
+        }
+        else if(opcao == 2){
+            resul = "Cliente: " + cliente + "</br>Seu valor a pagar é de: R$" + Valor2
+        }
+        else if(opcao == 3){
+            resul = "Cliente: " + cliente + "</br>Seu valor a pagar é de: R$" + Valor3
+        }
+
+        document.getElementById("lanchonete").innerHTML = resul;
+    </script>
+    
+</body>
+</html>
